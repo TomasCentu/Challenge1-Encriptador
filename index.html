@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge Alura</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/807d87a557.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="javascript.js"></script>
+        <link rel="icon" href="images/icon.png">
+    </head>
+
+    <body>
+
+        <header>
+            <img class="letra-logo" src="images/Logo.png" alt="logo Alura">
+
+            <h1 class="titulo"> Encriptador de Textos </h1>
+
+        </header>
+
+        <main>
+            <article>
+               <textarea class="texto-input" placeholder="ingrese su texto aquí..."></textarea>
+                
+                <p class="alert"><i class="fa-solid fa-circle-exclamation"> texto solo en minusculas y sin acentuaciones. </i></p>
+
+                <div class="botones">
+
+                    <button type="button" class="boton-encriptar" onclick="encriptar()"> Encriptar! </button>
+                    <button type="button" class="boton-desencriptar" onclick="desencriptar()"> Desencriptar! </button>
+                </div>
+            </article>
+
+            <aside>
+                <div class="contenedor-aside">
+                    <p class="info"> su texto </p>
+    
+                    <img src="images/muñeco.png" alt="imagen-texto-no-encontrado" class="munieco">
+    
+                    <p class="info2"> texto no encontrado </p> 
+    
+                    <textarea title="salida" class="texto-salida" readonly=""> Ingrese el texto que desea encriptar o desencriptar. </textarea>
+    
+                    <button type="button" class="boton-copy" onclick="copiar()"> Copy! </button>
+        
+                </div>
+            </aside>
+        </main> 
+        <footer>
+            
+            <div>
+
+                <i class="fa-brands fa-github"><a href="https://github.com/TomasCentu"> Github/TomasCentu</a></i>
+                <i class="fa-brands fa-linkedin"><a href="https://www.linkedin.com/in/tomascenturion/"> Linkedin/Tomascenturion</a></i> 
+            </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,271 @@
+* {
+    font-family: cursive;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    background: #d7d9e1;
+}
+
+/* encabezado */
+.titulo {
+    text-align: center;
+    padding: 3% 0 0 0;
+    font-size: 160%;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+.letra-logo {
+    align-items: flex-start;
+    position: absolute;
+    width: 10%;
+    height: 7%;
+    top: 3%;
+}
+
+/* parte de texto input y botones de encriptar/desencriptar */
+
+article {
+    width: 60%;
+    height: 649px;
+    display: inline-block;
+}
+
+.texto-input {
+    width: 90%;
+    height: 65%;
+    left: 10%;
+    top: 6%;
+    font-size: 125%;
+    line-height: 150%;
+    resize: none;
+    border: none;
+    color: #0A3871;
+    background: transparent;
+    outline: none;
+    position: relative;
+}
+
+.alert {
+    width: 50%;
+    font-size: 60%;
+    position: relative;
+    left: 11%;
+    top: 7%;
+}
+
+.botones {
+    display: flex;
+    gap: 10%;
+    position: relative;
+    width: 70%;
+    height: 10%;
+    left: 20%;
+    top: 13%;
+}
+
+.boton-encriptar, .boton-desencriptar {
+    width: 50%;
+    height: 80%;
+    border: 1px solid #3a3a3c;
+    border-radius: 24px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.boton-encriptar{
+    background: #0A3871;
+    color: #FFFFFF;
+}
+
+.boton-desencriptar{
+    background: #FFFFFF;
+    color: #0A3871;
+}
+
+.boton-encriptar:hover, .boton-desencriptar:hover {
+    height: 85%;
+}
+
+/* parte de salida de texto  */
+aside {
+    float: right;
+    margin: 2% 6% 0 0px;
+    height: 540px;
+}
+
+.contenedor-aside {
+    height: 100%;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgb(0 0 0 / 30%);
+    border-radius: 32px;
+}
+
+.info {
+    padding-top: 2%;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+    font-size: 115%;
+    margin-bottom: 10%;
+}
+
+.munieco {
+    position: relative;
+    width: 82%;
+    margin: 4% auto 15%;
+    display: flex;
+}
+
+.info2 {
+    text-align: center;
+    font-size: 115%;
+    font-weight: bold;
+}
+
+.texto-salida {
+    text-align: center;
+    resize: none;
+    width: 90%;
+    border: none;
+    outline: none;
+    background: transparent;
+    margin: 3% 5%;
+}
+
+.boton-copy {
+    width: 30%;
+    padding: 5%;
+    position: relative;
+    left: 33%;
+    top: 3%;
+    color: #0A3871;
+    border: 1px solid #3a3a3c;
+    border-radius: 24px;
+    display: none;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-bottom: 4%;
+    
+}
+
+.boton-copy:hover {
+    top: 2.5%;
+}
+
+/* footer */
+i {
+    margin-left: 2%;
+}
+
+/* para otras recoluciones, aunque falta mejorar */
+
+@media screen and (min-width: 1200px){
+
+    article {
+        width: 60%;
+        height: 680px;
+    }
+
+    aside {
+        height: 540px;
+    } 
+}
+
+@media screen and (min-width: 950px) and (max-width: 1180px){
+
+    .letra-logo {
+        width: 10%;
+        height: 4%;
+        top: 1%;
+    }
+
+    article {
+        width: 60%;
+        height: 500px;
+    }
+
+    aside {
+        height: 450px;
+    }
+
+    .munieco {
+        width: 65%;
+    }
+    .boton-copy {
+        width: 22%;
+        top: 0;
+        padding: 3%;
+        left: 40%;
+    }
+}   
+
+@media screen and (min-width: 600px) and (max-width: 940px){
+
+    .letra-logo {
+        width: 10%;
+        height: 4%;
+        top: 2%;
+    }
+    article {
+        width: 100%;
+        height: 500px;
+    }
+    aside {
+        height: 400px;
+        width: 100%;
+        margin: 0;
+    }
+    .info {
+        margin-bottom: 2%;
+    }
+    .munieco {
+        width: 30%;
+        margin: 0 auto;
+    }
+    .boton-copy {
+        width: 20%;
+        top: 0px;
+        padding: 1%;
+        left: 42%;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 560px) {
+
+    .letra-logo {
+        top: 1%;
+        width: 16%;
+        height: 3%;
+    }
+    .titulo{
+        font-size: 140%;
+    }
+    article {
+        width: 100%;
+        height: 480px;
+    }
+    .texto-input {
+        left: 4%;
+    }
+    .alert {
+        width: 80%;
+    }
+    .botones {
+        left: 10%;
+        top: 9%;
+    }
+    aside {
+        height: 440px;
+        margin: -4% 6% 2% 6%;
+    }
+    .munieco {
+        margin: 4% auto 3%;
+    }
+}
